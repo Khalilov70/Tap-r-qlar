@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n,m=0;
+    while (true) {
+        cout << "Ededi daxil edin (0 = dayandır): ";
+        cin >> n;
+        if (n==0) break;
+        if (n>m) m=n;
+    }
+    cout << "En boyuk eded: " << m;
+    return 0;
+}

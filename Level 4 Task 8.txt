@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Ededi daxil edin: ";
+    cin >> n;
+    string b= "";
+    if (n==0) b="0";
+    while (n>0) {
+        b=char(n%2+'0')+b; 
+        n/=2;
+    }
+    cout << "2-lik formada: " << b << endl;
+    return 0;
+}
